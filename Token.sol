@@ -102,7 +102,7 @@ contract Token is ERC20Interface, Owned {
     constructor() public { 
         symbol = "KWDT";
         name = "TRADE DINAR";
-        decimals = 18;
+        decimals = 2;
         _totalSupply = 100000000 * 10**uint(decimals);
         balances[owner] = _totalSupply;
         emit Transfer(address(0), owner, _totalSupply);
